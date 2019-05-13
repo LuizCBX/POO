@@ -137,6 +137,7 @@ public class cadastrarFisica extends JFrame {
 		
 		PessoaFisica pf = new PessoaFisica();
 		
+		//botão de ativação de cadastro
 		btnCadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				pf.setId(Integer.parseInt(txtId.getText()));

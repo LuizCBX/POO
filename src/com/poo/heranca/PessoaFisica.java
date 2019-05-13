@@ -74,7 +74,7 @@ public class PessoaFisica extends Cliente{
 		//----append = vai adicionando ao arquivo
 		//----write = troca o conteudo (1 linha de dados)
 		try {
-			arquivo = new FileWriter("c:\\LuizEclipse\\cadastro.txt");
+			arquivo = new FileWriter("c:\\Luiz\\cadastro.txt"); // ------------ Alterar Para LuizEclipse
 			arquivo.append(this.nome);
 			arquivo.append(this.getEmail());
 			arquivo.append(this.getTelefone());
@@ -92,6 +92,7 @@ public class PessoaFisica extends Cliente{
 			//FIFO - First in, First out (FILA)
 			//LIFO - Lest in, Lest out (PILHA)
 		}
+		//finalizador do try catch e fecha e ele se torna fisico
 		finally {
 			try {
 				arquivo.close();
@@ -102,3 +103,4 @@ public class PessoaFisica extends Cliente{
 		
 	}
 }
+
